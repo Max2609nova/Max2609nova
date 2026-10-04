@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&amp;display=swap');
+    text { font-family: 'Outfit', sans-serif; fill: #fff; font-size: 13px; }
+  </style>
+  <rect width="450" height="200" rx="16" fill="#110724" stroke="#a855f7" stroke-width="1.5"/>
+
+  <!-- Python -->
+  <g transform="translate(30, 42)">
+    <text x="0" y="0">Python</text>
+    <text x="390" y="0" text-anchor="end" fill="#ff2a85">52%</text>
+    <rect y="8" width="390" height="8" rx="4" fill="#25123d"/>
+    <rect y="8" width="202" height="8" rx="4" fill="#ff2a85">
+      <animate attributeName="width" from="0" to="202" dur="1.5s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- SQL -->
+  <g transform="translate(30, 82)">
+    <text x="0" y="0">SQL</text>
+    <text x="390" y="0" text-anchor="end" fill="#00f2fe">28%</text>
+    <rect y="8" width="390" height="8" rx="4" fill="#25123d"/>
+    <rect y="8" width="109" height="8" rx="4" fill="#00f2fe">
+      <animate attributeName="width" from="0" to="109" dur="1.5s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- DAX / Power BI -->
+  <g transform="translate(30, 122)">
+    <text x="0" y="0">Power BI / DAX</text>
+    <text x="390" y="0" text-anchor="end" fill="#facc15">12%</text>
+    <rect y="8" width="390" height="8" rx="4" fill="#25123d"/>
+    <rect y="8" width="46" height="8" rx="4" fill="#facc15">
+      <animate attributeName="width" from="0" to="46" dur="1.5s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- JavaScript / Tableau -->
+  <g transform="translate(30, 162)">
+    <text x="0" y="0">Others (Tableau, JS)</text>
+    <text x="390" y="0" text-anchor="end" fill="#a855f7">8%</text>
+    <rect y="8" width="390" height="8" rx="4" fill="#25123d"/>
+    <rect y="8" width="31" height="8" rx="4" fill="#a855f7">
+      <animate attributeName="width" from="0" to="31" dur="1.5s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>
