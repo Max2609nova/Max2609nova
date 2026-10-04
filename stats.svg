@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a85"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;display=swap');
+    text { font-family: 'Outfit', sans-serif; fill: #ffffff; }
+    .stat-row { opacity: 0; animation: slideIn 0.8s forwards ease; }
+    @keyframes slideIn { to { opacity: 1; transform: translateX(0); } }
+  </style>
+
+  <rect width="450" height="200" rx="16" fill="#110724" stroke="#ff2a85" stroke-width="1.5"/>
+
+  <!-- Rank Ring -->
+  <g transform="translate(65, 100)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#25123d" stroke-width="8"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="35" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="283" to="35" dur="1.8s" fill="freeze"/>
+    </circle>
+    <text x="0" y="6" font-size="22" font-weight="700" text-anchor="middle">A+</text>
+  </g>
+
+  <!-- Stat Items -->
+  <g transform="translate(150, 48)">
+    <g class="stat-row" style="animation-delay: 0.2s; transform: translateX(15px);">
+      <text x="0" y="0" font-size="14" fill="#a855f7">⭐ Total Stars:</text>
+      <text x="250" y="0" font-size="15" font-weight="700" text-anchor="end">48</text>
+    </g>
+    <g class="stat-row" style="animation-delay: 0.4s; transform: translateX(15px);" transform="translate(0, 34)">
+      <text x="0" y="0" font-size="14" fill="#a855f7">📦 Commits (2026):</text>
+      <text x="250" y="0" font-size="15" font-weight="700" text-anchor="end">482</text>
+    </g>
+    <g class="stat-row" style="animation-delay: 0.6s; transform: translateX(15px);" transform="translate(0, 68)">
+      <text x="0" y="0" font-size="14" fill="#a855f7">🔥 Pull Requests:</text>
+      <text x="250" y="0" font-size="15" font-weight="700" text-anchor="end">64</text>
+    </g>
+    <g class="stat-row" style="animation-delay: 0.8s; transform: translateX(15px);" transform="translate(0, 102)">
+      <text x="0" y="0" font-size="14" fill="#a855f7">🎯 Issues Closed:</text>
+      <text x="250" y="0" font-size="15" font-weight="700" text-anchor="end">31</text>
+    </g>
+  </g>
+</svg>
